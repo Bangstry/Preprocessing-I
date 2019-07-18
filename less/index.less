@@ -50,10 +50,128 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color:@deepskyblue;
+}
+@superb-text: 'Squada One', cursive;
+@deepskyblue: deepskyblue;
+@white:white;
+.flexx{
+	display:flex;
+}
+.flexcolumn{
+	flex-direction: column;
 }
 
+.container{
+	.flexx();
+	.flexcolumn();
+	width: 90%;
+	margin: 0 auto;
+	nav{
+		.flexx();
+		justify-content: space-around;
+		margin: 3% 0;
+		font-family: @superb-text;
+		background: @white;
+	}
+	
+	a:hover{
+		text-decoration: none;
+		color: @deepskyblue;
+	}
+}
+
+h1{
+	font-size: 300%;
+}
+.idenity{
+	.flexx();
+	background: @white;
+	img{
+		width:40%;
+	}
+	.name-section{
+		width:60%;
+		.flexx();
+		.flexcolumn();
+		justify-content: center;
+		margin: 0 auto;
+		button{
+			margin: 0 auto;
+		}
+		h1,h3{
+			text-align: center;
+			margin: 2% 0;
+		}
+	}
+}
+.container-2{
+	.flexx();
+	font-family:@superb-text;
+	.about{
+		width:50%;
+		margin-top:3%;
+	}
+	.stuff{
+		width:50%;
+		margin-top: 3%;
+	}
+
+}
+
+.work-history{
+	margin: 3%;
+	font-family:@superb-text;
+	background:@white;
+	h2{
+		font-size:2rem;
+	}
+	div{
+		font-size:1rem;
+		.flexx();
+		justify-content: space-around;
+
+	}
+	.big-font{
+		font-size:1.5rem;
+	}
+
+}
+footer{
+	margin: 0 auto;
+}
+.phone{
+	text-align: center;
+}
+@media screen and (max-width: 500px){
+	.nav{
+		.flexcolumn();
+		margin: 5px 0;
+	}
+	.nav a{
+		margin: 5px 0;
+	}
+	.idenity{
+		.flexcolumn();
+		align-items: center;
+	}
+	.container-2{
+		flex-direction: column;
+		align-items: center;
+	}
+	.about{
+		width:100%
+	}
+	.stuff{
+		width:100%
+	}
+	.work-history{
+		margin:3%;
+
+	}
+}

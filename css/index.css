@@ -1,1 +1,245 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: deepskyblue;
+}
+.flexx {
+  display: flex;
+}
+.flexcolumn {
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.container nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 0;
+  font-family: 'Squada One', cursive;
+  background: white;
+}
+.container a:hover {
+  text-decoration: none;
+  color: deepskyblue;
+}
+h1 {
+  font-size: 300%;
+}
+.idenity {
+  display: flex;
+  background: white;
+}
+.idenity img {
+  width: 40%;
+}
+.idenity .name-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.idenity .name-section button {
+  margin: 0 auto;
+}
+.idenity .name-section h1,
+.idenity .name-section h3 {
+  text-align: center;
+  margin: 2% 0;
+}
+.container-2 {
+  display: flex;
+  font-family: 'Squada One', cursive;
+}
+.container-2 .about {
+  width: 50%;
+  margin-top: 3%;
+}
+.container-2 .stuff {
+  width: 50%;
+  margin-top: 3%;
+}
+.work-history {
+  margin: 3%;
+  font-family: 'Squada One', cursive;
+  background: white;
+}
+.work-history h2 {
+  font-size: 2rem;
+}
+.work-history div {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.work-history .big-font {
+  font-size: 1.5rem;
+}
+footer {
+  margin: 0 auto;
+}
+.phone {
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    margin: 5px 0;
+  }
+  .nav a {
+    margin: 5px 0;
+  }
+  .idenity {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    width: 100%;
+  }
+  .stuff {
+    width: 100%;
+  }
+  .work-history {
+    margin: 3%;
+  }
+}
